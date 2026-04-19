@@ -1,0 +1,869 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DoubleYourT.com — Compare Testosterone Replacement Therapy (TRT) for 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+	:root{
+	  --brand:#2f74c0; --brand-600:#255ea1;
+	  --accent:#2f6e3f; --accent-600:#265835;
+	  --ink:#0c1222; --muted:#556173; --subtle:#e7edf4;
+	  --bg:#f6f9fc; --card:#ffffff; --star:#f6b401;
+	  --shadow:0 6px 24px rgba(16,24,40,.08), 0 2px 6px rgba(16,24,40,.06);
+	  --shadow-lg:0 14px 38px rgba(16,24,40,.18), 0 6px 14px rgba(16,24,40,.10);
+	  --radius:16px; --ribbon:#108c7c;
+	}
+
+	*{box-sizing:border-box}
+	html,body{margin:0;padding:0}
+
+	body{
+	  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
+	  color:var(--ink);
+	  background:var(--bg);
+	  line-height:1.45;
+	}
+
+	/* HEADER (slim) */
+	.site-header{
+	  background:#fff;
+	  border-bottom:1px solid var(--subtle);
+	}
+	.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+	.header-row{
+	  display:flex;
+	  align-items:center;
+	  justify-content:center;
+	  height:60px;
+	  padding:6px 0;
+	}
+	.brand img{height:32px;width:auto;display:block}
+
+	/* SLIM HERO / INTRO (no image) */
+	.hero{
+	  background:#fff;
+	  border-bottom:1px solid var(--subtle);
+	}
+	.hero-inner{
+	  display:block;
+	  padding:18px 0 10px;
+	}
+	.hero h1{
+	  margin:0 0 6px;
+	  font-size:36px;
+	  line-height:1.12;
+	  letter-spacing:-.03em;
+	  font-weight:800;
+	  color:#071124;
+	}
+	.hero p{
+	  margin:0 0 6px;
+	  color:#36435b;
+	  font-size:15px;
+	  line-height:1.6;
+	  font-weight:500;
+	}
+	.pill{
+	  display:inline-flex;
+	  align-items:center;
+	  gap:8px;
+	  background:#eef3f8;
+	  color:#2f3b52;
+	  border:1px solid var(--subtle);
+	  padding:6px 10px;
+	  border-radius:999px;
+	  font-size:11px;
+	  font-weight:700;
+	  margin-top:6px;
+	}
+	.pill .dot{width:8px;height:8px;background:var(--brand);border-radius:50%}
+
+	/* hide hero image + stats to keep header slim */
+	.hero-visual,
+	.hero-img,
+	.stats-card{
+	  display:none !important;
+	}
+
+	/* PRODUCT LIST AREA */
+	.page{display:block;padding:18px 0 64px}
+
+	.ribbon-row{position:relative;height:0}
+	.ribbon{
+	  position:relative;
+	  display:inline-block;
+	  background:var(--ribbon);
+	  color:#fff;
+	  font-weight:900;
+	  letter-spacing:.2px;
+	  padding:12px 22px;
+	  border-radius:12px;
+	  box-shadow:var(--shadow);
+	  transform:translateY(18px);
+	}
+	.ribbon::after{
+	  content:'';
+	  position:absolute;
+	  left:12px;right:12px;bottom:-10px;
+	  height:10px;background:#0d7568;
+	  border-radius:0 0 8px 8px;
+	  opacity:.9;
+	}
+
+	.list{display:flex;flex-direction:column;gap:18px}
+	.list .card:first-child{margin-top:12px}
+	.card-link{text-decoration:none;color:inherit;display:block}
+	.card{
+	  position:relative;
+	  background:var(--card);
+	  border:1px solid var(--subtle);
+	  border-radius:var(--radius);
+	  box-shadow:var(--shadow);
+	  overflow:hidden;
+	  transition:transform .18s ease, box-shadow .18s ease;
+	}
+	.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+
+	.rank-row{
+	  display:grid;
+	  grid-template-columns:72px 1fr 220px;
+	  gap:18px;
+	  align-items:stretch;
+	  padding:12px 18px 12px 0;
+	}
+	.rank{
+	  background:#f2f6fa;
+	  height:100%;
+	  display:flex;
+	  align-items:center;
+	  justify-content:center;
+	  font-size:26px;
+	  font-weight:800;
+	  color:#8090a6;
+	}
+
+	.card-body{
+	  padding:4px 0 10px;
+	}
+
+	.vendor-line{
+	  display:flex;
+	  align-items:center;
+	  justify-content:space-between;
+	  gap:16px;
+	  padding:0 16px 4px;
+	}
+
+	/* Logo-only block */
+	.swap{
+	  display:flex;
+	  align-items:center;
+	  min-height:48px;
+	}
+	.swap-thumb img{
+	  max-width:190px;
+	  max-height:64px;
+	  width:auto;
+	  height:auto;
+	  display:block;
+	  object-fit:contain;
+	}
+	.swap-name{display:none;}
+
+	.coupon{
+	  display:inline-flex;
+	  align-items:center;
+	  gap:8px;
+	  font-weight:800;
+	  background:#e8f4ec;
+	  border:1px dashed #b8d6c1;
+	  color:var(--accent-600);
+	  padding:8px 12px;
+	  border-radius:999px;
+	  white-space:nowrap;
+	  font-size:13px;
+	}
+	.coupon .dot{width:8px;height:8px;background:var(--accent);border-radius:50%}
+
+	/* Row that holds bullets + trust logos */
+	.details-row{
+	  display:flex;
+	  align-items:flex-start;
+	  justify-content:space-between;
+	  gap:16px;
+	  padding:4px 16px 8px 16px;
+	}
+
+	.features{
+	  margin:0;
+	  padding:0;
+	  color:#334055;
+	  list-style:none;
+	  flex:1;
+	}
+	.features li{
+	  margin:4px 0;
+	  position:relative;
+	  padding-left:22px;
+	}
+	.features li::before{
+	  content:'✔';
+	  position:absolute;
+	  left:0;top:0;
+	  color:var(--accent);
+	  font-weight:900;
+	}
+
+	/* MIDDLE TRUST SEALS — side-by-side */
+	.trust-seals{
+	  display:flex;
+	  flex-direction:row;
+	  align-items:center;
+	  justify-content:center;
+	  gap:10px;
+	  flex-shrink:0;
+	  padding-bottom:0;
+	}
+	.trust-seals img{
+	  width:100px;
+	  height:auto;
+	  display:block;
+	}
+	.trust-seals img.hipaa-middle{
+	  width:90px;
+	}
+
+	.rating-col{
+	  display:flex;
+	  align-items:center;
+	  justify-content:center;
+	  height:100%;
+	  padding-right:18px;
+	}
+	.rating{
+	  display:flex;
+	  flex-direction:column;
+	  align-items:flex-start;
+	  gap:8px;
+	  width:100%;
+	}
+	.chip{
+	  display:inline-flex;
+	  align-items:center;
+	  gap:8px;
+	  padding:6px 10px;
+	  border-radius:999px;
+	  font-weight:800;
+	  font-size:12px;
+	  color:#0e664f;
+	  background:#d8efe9;
+	}
+	.stars{
+	  display:flex;
+	  gap:2px;
+	  font-size:16px;
+	  line-height:1;
+	  color:var(--star);
+	}
+	.stars .off{color:#c7cfda}
+	.score{
+	  display:flex;
+	  align-items:baseline;
+	  gap:10px;
+	}
+	.score .num{
+	  font-size:32px;
+	  font-weight:800;
+	  letter-spacing:-.02em;
+	}
+
+	/* ORANGE CTA BUTTONS */
+	.cta.ghost{
+	  display:inline-flex;
+	  align-items:center;
+	  justify-content:center;
+	  gap:10px;
+	  padding:10px 20px;
+	  font-weight:800;
+	  font-size:13px;
+	  color:#fff;
+	  background:#ff7a1a;
+	  border:1px solid #e26300;
+	  border-radius:8px;
+	  text-transform:uppercase;
+	  letter-spacing:.06em;
+	  text-decoration:none;
+	  width:100%;
+	  box-shadow:0 2px 0 rgba(0,0,0,.12);
+	}
+	.card:hover .cta.ghost{
+	  background:#e26300;
+	}
+
+	/* (not used anymore but safe) */
+	.hipaa-badge{
+	  margin-top:12px;
+	  width:100%;
+	  display:flex;
+	  justify-content:center;
+	}
+	.hipaa-badge img{
+	  width:120px;
+	  height:auto;
+	  display:block;
+	}
+
+	/* Bottom text section */
+	.article{
+	  background:#ffffff;
+	  border-top:1px solid var(--subtle);
+	  padding:32px 0 48px;
+	}
+	.article-inner{
+	  max-width:720px;
+	  margin:0 auto;
+	  font-size:14px;
+	  color:#4a5464;
+	  line-height:1.7;
+	}
+	.article h2{
+	  margin:0 0 12px;
+	  font-size:22px;
+	  line-height:1.2;
+	  letter-spacing:-.01em;
+	  color:#111827;
+	}
+	.article h3{
+	  margin:24px 0 8px;
+	  font-size:18px;
+	  line-height:1.3;
+	  color:#111827;
+	}
+	.article h4{
+	  margin:16px 0 6px;
+	  font-size:15px;
+	  font-weight:600;
+	  color:#111827;
+	}
+	.article p{margin:6px 0 12px;}
+	.article ul{
+	  margin:4px 0 16px 1.25rem;
+	  padding:0;
+	}
+	.article li{margin:4px 0;}
+	.article-note{
+	  margin:12px 0 16px;
+	  padding:10px 12px;
+	  border-radius:10px;
+	  background:#eef5ff;
+	  border:1px solid #d2e3ff;
+	  font-size:13px;
+	  color:#1f2937;
+	}
+	.article-note strong{font-weight:700;}
+	.article-cta{
+	  margin-top:20px;
+	  font-weight:500;
+	  color:#111827;
+	}
+
+	/* Disclosure bar + footer */
+	.notice-bar{
+	  font-size:12px;
+	  color:#415067;
+	  background:#f1f5fb;
+	  border-top:1px solid var(--subtle);
+	  padding:8px 0;
+	  text-align:center;
+	}
+	.notice-bar a{color:#255ea1;text-decoration:underline}
+
+	.site-footer{
+	  padding:28px 20px 64px;
+	  color:#6b7689;
+	  font-size:13px;
+	}
+	.site-footer .sep{
+	  height:1px;
+	  background:#e7edf4;
+	  margin-bottom:12px;
+	}
+	.footer-nav{
+	  margin-bottom:8px;
+	  display:flex;
+	  flex-wrap:wrap;
+	  gap:8px;
+	  align-items:center;
+	}
+	.footer-nav a{
+	  color:#4b5563;
+	  text-decoration:none;
+	  font-weight:500;
+	  font-size:13px;
+	}
+	.footer-nav a:hover{
+	  text-decoration:underline;
+	  color:#111827;
+	}
+	.footer-nav span{
+	  color:#c4c9d4;
+	  user-select:none;
+	}
+
+	/* Responsive tweaks */
+	@media (max-width:1024px){
+	  .hero-inner{padding:16px 0 8px;}
+	}
+
+	@media (max-width:720px){
+	  .hero h1{
+		font-size:30px;
+	  }
+	  .hero p{
+		font-size:14px;
+	  }
+
+	  .rank-row{
+		display:block;
+		padding:12px 16px;
+	  }
+
+	  .rank{
+		width:100%;
+		margin-bottom:8px;
+		display:flex;
+		align-items:center;
+		justify-content:flex-start;
+		padding:4px 8px;
+		background:#f2f6fa;
+		border-radius:10px;
+	  }
+
+	  .card-body{
+		padding:6px 0 10px;
+	  }
+
+	  .details-row{
+		display:flex;
+		flex-direction:column;
+		align-items:flex-start;
+		gap:10px;
+		padding:6px 0 0;
+	  }
+
+	  .trust-seals{
+		justify-content:flex-start;
+	  }
+
+	  .trust-seals img{
+		width:90px;
+	  }
+
+	  .rating-col{
+		padding:12px 0 0;
+	  }
+	}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+	<div class="wrap header-row">
+	  <a class="brand" href="#"><img src="chooseglp1.png" alt="ChooseGLP1.com logo"></a>
+	</div>
+  </header>
+
+  <section class="hero">
+	<div class="wrap hero-inner">
+	  <div class="hero-copy">
+		<center><h1>Best TRT Providers for 2026</h1></center>
+		<p>You've read or heard the hype around TRT, want to give it a try but don't want to have to see your doctor? <strong>You've come to the right place! Let us help you choose the right provider...</strong></p>
+		<p>We review the best telehealth companies offering testosterone replacement therapy for men.</p>
+		<div class="pill"><center><span class="dot" aria-hidden="true"></span> Last Updated: March 18, 2026</center></div>
+	  </div>
+	  <div class="hero-visual">
+		<img src="chooseglpheroimage.png" alt="Woman holding a semaglutide injection pen" class="hero-img">
+		<div class="stats-card" aria-label="Site usage statistics">
+		  <div class="stats-icon" aria-hidden="true">&#128522;</div>
+		  <div class="stats-text">
+			<div class="stats-num">1,648 men</div>
+			<div class="stats-sub">found a treatment for themselves this week.</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+
+  <main class="wrap page" id="main">
+	<section>
+	  <div class="ribbon-row"><span class="ribbon">Editor's Choice &mdash; March 2026</span></div>
+	  <div class="list" data-lt-offers>
+
+		<!-- Card 1: Titan -->
+		<div data-lt-offer-id="OFFER_ID_1">
+		<a class="card-link" data-lt-offer="OFFER_ID_1" target="_blank" rel="nofollow sponsored noopener noreferrer" aria-label="Open Remedy Meds">
+		  <article class="card">
+			<div class="rank-row">
+			  <div class="rank"><span data-lt-pos-num>1</span></div>
+			  <div class="card-body">
+				<div class="vendor-line">
+				  <div class="swap">
+					<div class="swap-name">Titan</div>
+					<div class="swap-thumb"><img data-lt-image src="remedylogo.png" alt="Remedy Meds logo" /></div>
+				  </div>
+				  <div class="coupon"><span class="dot"></span> Special Offer: $100 off labs & consult</div>
+				</div>
+				<div class="details-row">
+				  <ul class="features">
+					<li>$49 to start - transparent pricing, no hidden fees</li>
+					<li>From the makers of Keeps - trusted by 2,000,000 men since 2017</li>
+					<li>Real labs, licensed clinicians</li>
+				  </ul>
+				  <div class="trust-seals">
+					<img src="legitscript.webp" alt="LegitScript certified badge">
+					<img src="hipaa.webp" alt="HIPAA compliant badge" class="hipaa-middle">
+				  </div>
+				</div>
+			  </div>
+			  <div class="rating-col">
+				<div class="rating">
+				  <div class="chip">Excellent</div>
+				  <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+				  <div class="score"><span class="num">9.8</span></div>
+				  <div class="cta ghost" data-lt-cta>VISIT SITE <span class="arrow">&#10140;</span></div>
+				</div>
+			  </div>
+			</div>
+		  </article>
+		</a>
+		</div>
+
+		<!-- Card 2: Maximus -->
+		<div data-lt-offer-id="OFFER_ID_2">
+		<a class="card-link" data-lt-offer="OFFER_ID_2" target="_blank" rel="nofollow sponsored noopener noreferrer" aria-label="Open MedVi">
+		  <article class="card">
+			<div class="rank-row">
+			  <div class="rank"><span data-lt-pos-num>2</span></div>
+			  <div class="card-body">
+				<div class="vendor-line">
+				  <div class="swap">
+					<div class="swap-name">Maximus</div>
+					<div class="swap-thumb"><img data-lt-image src="medvi.png" alt="MedVi logo" /></div>
+				  </div>
+				  <div class="coupon"><span class="dot"></span> New Customers: 50% Off 1st Month/div>
+				</div>
+				<div class="details-row">
+				  <ul class="features">
+					<li>Custom formulas for maximum results, Guaranteed.</li>
+					<li>Wide variety of clinically proven fertility friendly options</li>
+					<li>Optimize your performance against declining testosterone</li>
+				  </ul>
+				  <div class="trust-seals">
+					<img src="legitscript.webp" alt="LegitScript certified badge">
+					<img src="hipaa.webp" alt="HIPAA compliant badge" class="hipaa-middle">
+				  </div>
+				</div>
+			  </div>
+			  <div class="rating-col">
+				<div class="rating">
+				  <div class="chip">Excellent</div>
+				  <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="off"></span></div>
+				  <div class="score"><span class="num">9.7</span></div>
+				  <div class="cta ghost" data-lt-cta>VISIT SITE <span class="arrow">&#10140;</span></div>
+				</div>
+			  </div>
+			</div>
+		  </article>
+		</a>
+		</div>
+
+		<!-- Card 3: Taurus -->
+		<div data-lt-offer-id="OFFER_ID_3">
+		<a class="card-link" data-lt-offer="OFFER_ID_3" target="_blank" rel="nofollow sponsored noopener noreferrer" aria-label="Open Sprout">
+		  <article class="card">
+			<div class="rank-row">
+			  <div class="rank"><span data-lt-pos-num>3</span></div>
+			  <div class="card-body">
+				<div class="vendor-line">
+				  <div class="swap">
+					<div class="swap-name">Taurus</div>
+					<div class="swap-thumb"><img data-lt-image src="sprout.svg" alt="Sprout logo" /></div>
+				  </div>
+				  <div class="coupon"><span class="dot"></span> $49 Testosterone Test ($80 off)</div>
+				</div>
+				<div class="details-row">
+				  <ul class="features">
+					<li>FDA-approved TRT medications prescribed online</li>
+					<li>Low, transparent pricing with no hiddden fees</li>
+					<li>Get pre-approved in less than 3 minutes</li>
+				  </ul>
+				  <div class="trust-seals">
+					<img src="legitscript.webp" alt="LegitScript certified badge">
+					<img src="hipaa.webp" alt="HIPAA compliant badge" class="hipaa-middle">
+				  </div>
+				</div>
+			  </div>
+			  <div class="rating-col">
+				<div class="rating">
+				  <div class="chip">Great</div>
+				  <div class="stars">&#9733;&#9733;&#9733;&#9733;<span class="off">&#9733;</span></div>
+				  <div class="score"><span class="num">9.5</span></div>
+				  <div class="cta ghost" data-lt-cta>VISIT SITE <span class="arrow">&#10140;</span></div>
+				</div>
+			  </div>
+			</div>
+		  </article>
+		</a>
+		</div>
+
+		<!-- Card 4: Peter MD -->
+		<div data-lt-offer-id="OFFER_ID_4">
+		<a class="card-link" data-lt-offer="OFFER_ID_4" target="_blank" rel="nofollow sponsored noopener noreferrer" aria-label="Open MyStart">
+		  <article class="card">
+			<div class="rank-row">
+			  <div class="rank"><span data-lt-pos-num>4</span></div>
+			  <div class="card-body">
+				<div class="vendor-line">
+				  <div class="swap">
+					<div class="swap-name">Peter MD</div>
+					<div class="swap-thumb"><img data-lt-image src="mystart.svg" alt="MyStart logo" /></div>
+				  </div>
+				  <div class="coupon"><span class="dot"></span> $79/mo TRT with no hidden fees</div>
+				</div>
+				<div class="details-row">
+				  <ul class="features">
+					<li>Largest, most trusted provider for TRT - 300,000 patients</li>
+					<li>50% off labs for all new patients</li>
+					<li>Simple, 3 step process to get started</li>
+				  </ul>
+				  <div class="trust-seals">
+					<img src="legitscript.webp" alt="LegitScript certified badge">
+					<img src="hipaa.webp" alt="HIPAA compliant badge" class="hipaa-middle">
+				  </div>
+				</div>
+			  </div>
+			  <div class="rating-col">
+				<div class="rating">
+				  <div class="chip">Great</div>
+				  <div class="stars">&#9733;&#9733;&#9733;&#9733;<span class="off">&#9733;</span></div>
+				  <div class="score"><span class="num">9.4</span></div>
+				  <div class="cta ghost" data-lt-cta>VISIT SITE <span class="arrow">&#10140;</span></div>
+				</div>
+			  </div>
+			</div>
+		  </article>
+		</a>
+		</div>
+
+		<!-- Card 5: DudeMeds -->
+		<div data-lt-offer-id="OFFER_ID_5">
+		<a class="card-link" data-lt-offer="OFFER_ID_5" target="_blank" rel="nofollow sponsored noopener noreferrer" aria-label="Open SkinnyRX">
+		  <article class="card">
+			<div class="rank-row">
+			  <div class="rank"><span data-lt-pos-num>5</span></div>
+			  <div class="card-body">
+				<div class="vendor-line">
+				  <div class="swap">
+					<div class="swap-name">DudeMeds</div>
+					<div class="swap-thumb"><img data-lt-image src="skinnyrx.png" alt="SkinnyRX logo" /></div>
+				  </div>
+				  <div class="coupon"><span class="dot"></span> $87 off special: TRT + Labs + televisit</div>
+				</div>
+				<div class="details-row">
+				  <ul class="features">
+					<li>No hidden membership fees</li>
+					<li>FDA-approved injectable testosterone</li>
+					<li>For men who refuse to settle...</li>
+				  </ul>
+				  <div class="trust-seals">
+					<img src="legitscript.webp" alt="LegitScript certified badge">
+					<img src="hipaa.webp" alt="HIPAA compliant badge" class="hipaa-middle">
+				  </div>
+				</div>
+			  </div>
+			  <div class="rating-col">
+				<div class="rating">
+				  <div class="chip">Very Good</div>
+				  <div class="stars">&#9733;&#9733;&#9733;&#9733;<span class="off">&#9733;</span></div>
+				  <div class="score"><span class="num">9.2</span></div>
+				  <div class="cta ghost" data-lt-cta>VISIT SITE <span class="arrow">&#10140;</span></div>
+				</div>
+			  </div>
+			</div>
+		  </article>
+		</a>
+		</div>
+
+		<!-- Card 6: DirectMeds -->
+		<div data-lt-offer-id="OFFER_ID_6">
+		<a class="card-link" data-lt-offer="OFFER_ID_6" target="_blank" rel="nofollow sponsored noopener noreferrer" aria-label="Open DirectMeds">
+		  <article class="card">
+			<div class="rank-row">
+			  <div class="rank"><span data-lt-pos-num>6</span></div>
+			  <div class="card-body">
+				<div class="vendor-line">
+				  <div class="swap">
+					<div class="swap-name">DirectMeds</div>
+					<div class="swap-thumb"><img data-lt-image src="directmeds.png" alt="DirectMeds logo" /></div>
+				  </div>
+				  <div class="coupon"><span class="dot"></span> Save $100 on Your First Month</div>
+				</div>
+				<div class="details-row">
+				  <ul class="features">
+					<li>Only $147 for First Month</li>
+					<li>Free Expedited Shipping</li>
+					<li>No Membership Fee</li>
+					<li>Doctor-led plans, coaching &amp; active community</li>
+				  </ul>
+				  <div class="trust-seals">
+					<img src="legitscript.webp" alt="LegitScript certified badge">
+					<img src="hipaa.webp" alt="HIPAA compliant badge" class="hipaa-middle">
+				  </div>
+				</div>
+			  </div>
+			  <div class="rating-col">
+				<div class="rating">
+				  <div class="chip">Good</div>
+				  <div class="stars">&#9733;&#9733;&#9733;&#9733;<span class="off">&#9733;</span></div>
+				  <div class="score"><span class="num">8.8</span></div>
+				  <div class="cta ghost" data-lt-cta>VISIT SITE <span class="arrow">&#10140;</span></div>
+				</div>
+			  </div>
+			</div>
+		  </article>
+		</a>
+		</div>
+
+		<!-- Card 7: Yucca Health -->
+		<div data-lt-offer-id="OFFER_ID_7">
+		<a class="card-link" data-lt-offer="OFFER_ID_7" target="_blank" rel="nofollow sponsored noopener noreferrer" aria-label="Open Yucca Health">
+		  <article class="card">
+			<div class="rank-row">
+			  <div class="rank"><span data-lt-pos-num>7</span></div>
+			  <div class="card-body">
+				<div class="vendor-line">
+				  <div class="swap">
+					<div class="swap-name">Yucca Health</div>
+					<div class="swap-thumb"><img data-lt-image src="yuccahealth.png" alt="Yucca Health logo" /></div>
+				  </div>
+				  <div class="coupon"><span class="dot"></span> New Year 2026: $400 OFF!</div>
+				</div>
+				<div class="details-row">
+				  <ul class="features">
+					<li>Access to GLP-1 injections, Semaglutide, Tirzepatide &amp; Wegovy</li>
+					<li>Delivered from the pharmacy to your door</li>
+					<li>Start for just $146, no insurance required</li>
+					<li>Easy, personalized evaluation process</li>
+					<li>Get a refund if you don't lose weight</li>
+				  </ul>
+				  <div class="trust-seals">
+					<img src="legitscript.webp" alt="LegitScript certified badge">
+					<img src="hipaa.webp" alt="HIPAA compliant badge" class="hipaa-middle">
+				  </div>
+				</div>
+			  </div>
+			  <div class="rating-col">
+				<div class="rating">
+				  <div class="chip">Good</div>
+				  <div class="stars">&#9733;&#9733;&#9733;&#9733;</div>
+				  <div class="score"><span class="num">8.7</span></div>
+				  <div class="cta ghost" data-lt-cta>VISIT SITE <span class="arrow">&#10140;</span></div>
+				</div>
+			  </div>
+			</div>
+		  </article>
+		</a>
+		</div>
+
+	  </div>
+	</section>
+
+	<!-- Educational section at bottom -->
+	<section class="article">
+	  <div class="article-inner">
+		<h2>Weight-loss injections</h2>
+		<p>Weight-loss injections are rapidly gaining popularity, especially among individuals who have found traditional weight loss methods unsuccessful. As of 2024, an estimated 15.5 million people have turned to injectable weight loss medications.<sup>1</sup></p>
+		<p>On average, injectable medications lead to more weight loss than oral medications or diet and exercise alone.<sup>2</sup> They work alongside natural body processes to support weight loss by addressing common challenges including appetite, metabolism, and fat absorption.</p>
+
+		<h3>How weight-loss injections work</h3>
+		<p>For some people, hormonal imbalances cause increased hunger and cravings, making weight loss more difficult. These treatments are approved for people with obesity and others who haven't been able to lose weight with diet and exercise alone.</p>
+		<p>Weight-loss injections can help reduce improper hunger cues, increase calorie burn, and prevent fat absorption, depending on the specific treatment.</p>
+		<p>Here's how each type generally works:</p>
+		<ul>
+		  <li><strong>Appetite control:</strong> injections can mimic hormones that signal fullness, helping to reduce calorie intake without constant hunger signals.</li>
+		  <li><strong>Metabolism boost:</strong> injections can help the body burn calories more efficiently by increasing metabolic rate, making the body use more energy even at rest.</li>
+		  <li><strong>Fat absorption reduction:</strong> injections can block the absorption of fat, meaning less fat is absorbed from food.</li>
+		</ul>
+
+		<h3>Types of weight-loss injection medications</h3>
+		<h4>Weight-loss injection pens</h4>
+		<p>Many weight-loss injections now come in the form of easy-to-use pens. These are pre-dosed for simple, at-home self-administering with minimal discomfort.</p>
+
+		<h4>Injectable diabetes medication</h4>
+		<p>Some diabetes medications that manage blood sugar have also proven to aid in significant weight loss. With doctor support, they can be a great option for individuals managing weight and diabetes at the same time.</p>
+
+		<h3>Benefits of weight-loss injections</h3>
+		<ul>
+		  <li>Fast results (within a few weeks,<sup>3</sup> especially when paired with lifestyle changes).</li>
+		  <li>Convenient at-home doses.</li>
+		  <li>Reduced risk of high blood pressure, stroke, and diabetes.<sup>4</sup></li>
+		  <li>A proven method that works when other treatments (diet, exercise, pills) fail.</li>
+		</ul>
+		<p class="article-note"><strong>Pro tip:</strong> If other methods have stalled, injections can offer real, visible results. They are most effective when paired with healthy lifestyle habits.</p>
+
+		<h3>How to take weight-loss injections</h3>
+		<p>Typically, weight-loss injections are taken once daily or weekly, depending on the specific medication. Following the prescribed schedule is important for the injections to be effective.</p>
+		<ul>
+		  <li><strong>Daily injections (less common):</strong> often taken in the morning to help curb hunger and increase energy levels throughout the day.</li>
+		  <li><strong>Weekly injections (more common):</strong> long-lasting and typically work over time to adjust appetite and metabolism, offering a more hands-off approach.</li>
+		</ul>
+		<p>Most weight-loss injections are subcutaneous, meaning they are injected just under the skin. The process is designed to be as simple as possible, with minimal discomfort. The injection area should be rotated with each dose to avoid irritation.</p>
+		<p><strong>Common areas for administering these injections include:</strong></p>
+		<ul>
+		  <li>Abdomen (belly)</li>
+		  <li>Upper thigh</li>
+		  <li>Upper arm</li>
+		</ul>
+
+		<h3>Expected weight loss from injections</h3>
+		<p>Results can vary from person to person, but many patients begin to see weight loss within a few weeks of starting injections. On average, people may lose 1&ndash;2 pounds per week.<sup>3</sup></p>
+		<p>Slow, steady weight loss over time is typical, with the most significant weight loss occurring around three to six months after treatment begins.</p>
+
+		<h3>How to get weight-loss injections online</h3>
+		<p>Many companies now offer online consultations to make accessing weight-loss injections easier. Patients can speak with a licensed professional through a virtual visit, get a prescription, and have the medication shipped directly to their home. It's a convenient option for those who prefer to manage their health privately and efficiently.</p>
+
+		<h3>Are weight-loss injections right for you?</h3>
+		<p>If you've tried traditional methods like diet and exercise without success, weight-loss injections might be a good fit. Your general practitioner or online providers can help you learn if injections are appropriate for your health needs and lifestyle goals.</p>
+
+		<p class="article-cta"><strong>Ready to get started?</strong> See our list of the best companies offering weight-loss injections, compare company reviews, and view pricing to find the treatment option that's right for you and your lifestyle goals.</p>
+	  </div>
+	</section>
+  </main>
+
+  <div class="notice-bar">
+	  The listings featured on this site are from companies for which this site receives compensation.
+	  <a href="advertisingdisclosure.html">Advertising Disclosure</a>
+	</div>
+
+	<footer class="wrap site-footer">
+	  <div class="sep"></div>
+	  <nav class="footer-nav" aria-label="Legal links">
+		<a href="advertisingdisclosure.html">Advertising Disclosure</a>
+		<span>&bull;</span>
+		<a href="privacypolicy.html">Privacy Policy</a>
+		<span>&bull;</span>
+		<a href="terms.html">Terms &amp; Conditions</a>
+	  </nav>
+	  <div>&copy; 2026 ChooseGLP1.com. All rights reserved. Trademarks are property of their respective owners.</div>
+	</footer>
+
+<!-- ListicleTracker Snippet -->
+<script
+  src="https://lstcltrk.com/snippet.js"
+  data-lt-host="https://lstcltrk.com"
+  data-lt-click-domain="https://latclk.com"
+></script>
+</body>
+</html>
