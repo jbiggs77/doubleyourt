@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>About - DoubleYourT.com</title>
+<meta name="description" content="Who we are, how we choose what we feature, and how DoubleYourT.com makes money."/>
+<link rel="canonical" href="https://doubleyourt.com/about"/>
+<meta property="og:title" content="About - DoubleYourT.com"/>
+<meta property="og:description" content="Who we are, how we choose what we feature, and how DoubleYourT.com makes money."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://doubleyourt.com/about"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  color: #111;
+  background: #f7f7f8;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: #2d6ae1; }
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #e7e7ea;
+  padding: 14px 16px;
+}
+.site-header .inner {
+  max-width: 780px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.site-header .brand { display: inline-block; }
+.site-header .logo { max-width: clamp(130px, 26vw, 170px); }
+.site-header .brand-text { font-weight: 700; font-size: clamp(17px, 4vw, 21px); color: #111; text-decoration: none; }
+.site-nav { display: flex; gap: 14px; flex-wrap: wrap; }
+.site-nav a { color: #444; text-decoration: none; font-size: 15px; font-weight: 500; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: #2d6ae1; text-decoration: underline; }
+main.container {
+  max-width: 780px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: clamp(20px, 5vw, 40px);
+}
+main.container > *:first-child { margin-top: 0; }
+main.container > *:last-child { margin-bottom: 0; }
+h1 { font-size: clamp(26px, 6vw, 36px); line-height: 1.2; margin: 0 0 .35em; }
+h2 { font-size: clamp(19px, 4.2vw, 23px); margin: 1.7em 0 .5em; }
+h3 { font-size: clamp(16px, 3.6vw, 18px); margin: 1.4em 0 .4em; }
+.lede { font-size: clamp(16px, 3.8vw, 19px); color: #444; margin-bottom: 1.2em; }
+.updated { color: #666; font-size: 14px; margin: 0 0 1.6em; }
+ul, ol { padding-left: 1.3em; }
+li { margin: .4em 0; }
+.callout {
+  background: #f2f6fd; border: 1px solid #d6e2f8; border-radius: 10px;
+  padding: 14px 18px; margin: 1.4em 0;
+}
+.callout p:first-child { margin-top: 0; }
+.callout p:last-child { margin-bottom: 0; }
+.guide-list { list-style: none; padding: 0; margin: 0; }
+.guide-list li { margin: 0 0 12px; }
+.guide-card {
+  display: block; text-decoration: none; color: inherit;
+  border: 1px solid #e7e7ea; border-radius: 10px; padding: 16px 18px;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.guide-card:hover { border-color: #2d6ae1; box-shadow: 0 2px 10px rgba(45,106,225,.10); }
+.guide-card .g-title { display: block; font-weight: 700; font-size: clamp(16px, 3.8vw, 18px); color: #111; line-height: 1.35; }
+.guide-card .g-sub { display: block; color: #555; font-size: 15px; margin-top: 5px; line-height: 1.45; }
+.hero { text-align: center; padding-bottom: .5em; }
+.value-bullets { list-style: none; padding: 0; margin: 1.4em 0 0; color: #444; font-size: 15px; }
+.value-bullets li { padding-left: 22px; position: relative; }
+.value-bullets li::before { content: "\2713"; position: absolute; left: 0; color: #2d9c5a; font-weight: 700; }
+.newsletter-embed { margin: 1.5em 0 0; }
+.newsletter-embed iframe { width: 100%; border: none; }
+dl.contact-list dt { font-weight: 700; margin-top: 1.1em; }
+dl.contact-list dd { margin: .2em 0 0; }
+address { font-style: normal; }
+.site-footer {
+  background: #fff;
+  border-top: 1px solid #e7e7ea;
+  margin-top: 24px;
+  padding: 22px 16px 30px;
+  text-align: center;
+}
+.site-footer .inner { max-width: 780px; margin: 0 auto; }
+.site-footer .footer-links { font-size: 15px; }
+.site-footer .footer-links a { color: #2d6ae1; text-decoration: none; }
+.site-footer .footer-links a:hover { text-decoration: underline; }
+.site-footer .muted { color: #666; font-size: 13px; margin-top: .5rem; }
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="/"><img class="logo" src="/doubleyourt.png" alt="DoubleYourT.com"/></a>
+      <nav class="site-nav">
+        <a href="/">Home</a>
+        <a href="/about" aria-current="page">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h1>About</h1>
+    <p class="lede">Our purpose and how we operate</p>
+    <p class="updated">Last updated: August 29, 2026</p>
+
+    <p>DoubleYourT.com is an independent information and comparison website covering telehealth companies and other providers that offer testosterone therapy and related men's health services. We are not a medical provider, pharmacy, or telehealth company.</p>
+
+    <h2>What we do</h2>
+    <ul>
+      <li>Compare providers on price, availability, and how the service works.</li>
+      <li>Explain options in plain language so you can prepare questions for a licensed clinician.</li>
+      <li>Link you to providers so you can confirm current pricing and eligibility yourself.</li>
+    </ul>
+
+    <h2>How we choose what to feature</h2>
+    <p>Our guides are produced by the DoubleYourT.com editorial team. We publish our method so you can judge the recommendations for yourself:</p>
+    <ul>
+      <li>We compare providers on publicly available information about services, pricing and availability.</li>
+      <li>We weigh practical factors — convenience, what is included, and the support options offered.</li>
+      <li>Compensation from partners can influence placement and the order in which companies appear.</li>
+      <li>We do not provide medical care, diagnosis, treatment or prescriptions, and nothing here is medical advice.</li>
+      <li>Treatment decisions belong between you and a licensed healthcare professional.</li>
+    </ul>
+
+    <h2>How we keep the lights on</h2>
+    <p>We may earn commissions when you buy through our links, and we work with sponsors. That compensation can influence which products appear and in what order. Full details are in our <a href="/advertising-disclosure">Advertising Disclosure</a>.</p>
+
+    <h2>Contact</h2>
+    <p>General inquiries: <a href="mailto:hello@doubleyourt.com">hello@doubleyourt.com</a><br/>
+    Media and partnerships: <a href="mailto:partners@doubleyourt.com">partners@doubleyourt.com</a></p>
+    <p><strong>Mailing address</strong><br/>
+    <address>PO Box 8701<br/>Newark, OH 43055</address></p>
+  </main>
+  <footer class="site-footer">
+    <div class="inner">
+      <nav class="footer-links">
+        <a href="/privacy-policy">Privacy Policy</a> &middot;
+        <a href="/terms">Terms &amp; Conditions</a> &middot;
+        <a href="/advertising-disclosure">Advertising Disclosure</a> &middot;
+        <a href="/about">About</a> &middot;
+        <a href="/contact">Contact</a>
+      </nav>
+      <p class="muted">&copy; 2026 DoubleYourT.com. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
